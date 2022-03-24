@@ -1,0 +1,17 @@
+{    
+    "name": "sobrePWA",
+    "short_name": "Aprendendo_PWA",
+    "description": "Aprendendo sobre PWA.",
+    "icons": [
+      {
+        "src": "img/logo/logo_360x360.png",
+        "sizes": "360x360",
+        "type": "image/png",
+        "purpose": "any"
+      }
+    ],
+    "start_url": "./index.html",
+    "display": "fullscreen",
+    "theme_color": "#ffffff",
+    "background-color": "#000000"
+}
