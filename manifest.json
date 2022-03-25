@@ -1,0 +1,18 @@
+{
+  "name": "Hudson Silva GHLM - Primeiro PWA",
+  "short_name": "Aprendendo_PWA",
+  "description": "Aprendendo sobre PWA.",
+  "icons": [
+    {
+      "src": "img/logo/logo_360x360.png",
+      "sizes": "360x360",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/?homescreen=1",
+  "scope": "/",
+  "display": "fullscreen",
+  "background_color": "#2196F3",
+  "theme_color": "#2196F3"
+}

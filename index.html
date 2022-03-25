@@ -1,119 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <link rel="stylesheet" href="./getmdl/material.min.css">
+    <link rel="stylesheet" href="./getmdl/material.min.css" />
     <script src="./getmdl/material.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
 
-    <link rel="manifest" href="./manifest.webmanifest">    
-    <link rel="stylesheet" href="./css/index.css">    
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>PWA</title>
-</head>
+  </head>
 
-<body>
-    <div class="mdl-layout mdl-js-layout" style="height: 100%;">
-        <header class="mdl-layout__header mdl-layout__header--scroll">
-            <div class="mdl-layout__header-row">
-                <!-- Title -->
-                <a href="./index.html">
-                    <img title="Apredendo PWA" src="./img/blender/blender_white_2x.png">
+  <body>
+    <div class="mdl-layout mdl-js-layout" style="height: 100%">
+      <header class="mdl-layout__header mdl-layout__header--scroll">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <a href="./index.html">
+            <img
+              title="Apredendo PWA"
+              src="./img/blender/blender_white_2x.png"
+            />
+          </a>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer" style="margin-left: 30px">
+            <form action="#">
+              <div
+                class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+                style="display: flex; width: 300px"
+              >
+                <input class="mdl-textfield__input" type="text" id="sample3" />
+                <label
+                  class="mdl-textfield__label"
+                  style="color: gray"
+                  for="sample3"
+                  >Pesquisa</label
+                >
+                <a href="#">
+                  <span class="material-icons" style="cursor: pointer">
+                    <img
+                      title="Pesquisa"
+                      src="./img/search/search_white_1x.png"
+                    />
+                  </span>
                 </a>
-                <!-- Add spacer, to align navigation to the right -->
-                <div class="mdl-layout-spacer" style="margin-left: 30px;">
-                    <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
-                            style="display: flex; width: 300px;">
-                            <input class="mdl-textfield__input" type="text" id="sample3">
-                            <label class="mdl-textfield__label" style="color: gray;" for="sample3">Pesquisa</label>
-                            <a href="#">
-                                <span class="material-icons" style="cursor: pointer;">
-                                    <img title="Pesquisa" src="./img/search/search_white_1x.png">
-                                </span>
-                            </a>
-                        </div>
-                    </form>
-                </div>
-                <!-- Navigation -->
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="https://mail.google.com/mail/u/0/" target="_blank">
-                        <img title="E-mail" src="./img/email/email_white_1x.png">
-                    </a>
-                    <a class="mdl-navigation__link"
-                        href="https://www.google.com/search?"
-                        target="_blank">
-                        <img title="Imagens" src="./img/image/image_white_1x.png">
-                    </a>
-                    <a class="mdl-navigation__link" href="">
-                        <span class="material-icons">
-                            <img title="View Headline" src="./img/menu/menu_white_1x.png">
-                        </span>
-                    </a>
-                    <a class="mdl-navigation__link" href="https://www.instagram.com/" target="_blank">
-                        <span class="material-icons">
-                            <img title="Mood" src="./img/faces_happy/faces_happy_white_1x.png">
-                        </span>
-                    </a>
-                </nav>
-            </div>
-        </header>
-
-        <!-- main -->
-
-        <div class="demo-card-wide mdl-card mdl-shadow--2dp" style="align-items: center; margin: auto;">
-            <div class="mdl-card__title">
-                <img width="200" src="./img/logo/logo_360x360.png" alt="">
-            </div>
-            <div class="mdl-card__supporting-text"
-                style="color: black; text-align: justify; background-color: rgba(0,0,0,0.1);">
-                A Faculdade iv2 conta com profissionais com anos de experiência no mercado de tecnologia para
-                desenvolver a grade perfeita de habilidades para você, então fique ligado com a gente para trilhar seu
-                caminho como um programador.
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-                <a href="#" target="_blank"
-                    class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="color: black;">
-                    Descubra a Faculdade iv2
-                </a>
-            </div>
-            <div class="mdl-card__menu">
-                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                    <!-- <i class="material-icons">share</i> -->                    
-                </button>
-            </div>
+              </div>
+            </form>
+          </div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a
+              class="mdl-navigation__link"
+              href="https://mail.google.com/mail/u/0/"
+              target="_blank"
+            >
+              <img title="E-mail" src="./img/email/email_white_1x.png" />
+            </a>
+            <a
+              class="mdl-navigation__link"
+              href="https://www.google.com/search?"
+              target="_blank"
+            >
+              <img title="Imagens" src="./img/image/image_white_1x.png" />
+            </a>
+            <a class="mdl-navigation__link" href="">
+              <span class="material-icons">
+                <img title="View Headline" src="./img/menu/menu_white_1x.png" />
+              </span>
+            </a>
+            <a
+              class="mdl-navigation__link"
+              href="https://www.instagram.com/"
+              target="_blank"
+            >
+              <span class="material-icons">
+                <img
+                  title="Mood"
+                  src="./img/faces_happy/faces_happy_white_1x.png"
+                />
+              </span>
+            </a>
+          </nav>
         </div>
+      </header>
 
-        <!-- footer -->
+      <!-- main -->
 
-        <footer class="mdl-mini-footer" style="z-index: 1000;">
-            <div style="display: inline;">
-                <div class="mdl-mini-footer__link-section">
-                    <a href="#" style="text-decoration: none; color: white; ">
-                        Brasil
-                    </a>
-                </div>
-                <div class="mdl-mini-footer__left-section">
-                    <ul class="mdl-mini-footer__link-list">
-                        <li><a href="#">Publicidade</a></li>
-                        <li><a href="#">Negócios</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Como não Funciona</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="mdl-mini-footer__right-section" style="transform: translateY(20px);">
-                <ul class="mdl-mini-footer__link-list" style="margin-right: 15px;">
-                    <li><a href="#">Privacidade</a></li>
-                    <li><a href="#">Termos</a></li>
-                    <li><a style="cursor: pointer;">Configurações</a></li>
-                </ul>
-            </div>
-        </footer>
+      <div
+        class="demo-card-wide mdl-card mdl-shadow--2dp"
+        style="align-items: center; margin: auto"
+      >
+        <div class="mdl-card__title">
+          <img width="200" src="./img/logo/logo_360x360.png" alt="" />
+        </div>
+        <div
+          class="mdl-card__supporting-text"
+          style="
+            color: black;
+            text-align: justify;
+            background-color: rgba(0, 0, 0, 0.1);
+          "
+        >
+          A Faculdade iv2 conta com profissionais com anos de experiência no
+          mercado de tecnologia para desenvolver a grade perfeita de habilidades
+          para você, então fique ligado com a gente para trilhar seu caminho
+          como um programador.
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a
+            href="#"
+            target="_blank"
+            class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+            style="color: black"
+          >
+            Descubra a Faculdade iv2
+          </a>
+        </div>
+        <div class="mdl-card__menu">
+          <button
+            class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"
+          >
+            <i class="material-icons">share</i>
+          </button>
+        </div>
+      </div>
+
+      <!-- footer -->
+
+      <footer class="mdl-mini-footer" style="z-index: 1000">
+        <div style="display: inline">
+          <div class="mdl-mini-footer__link-section">
+            <a href="#" style="text-decoration: none; color: white"> Brasil </a>
+          </div>
+          <div class="mdl-mini-footer__left-section">
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="#">Publicidade</a></li>
+              <li><a href="#">Negócios</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Como não Funciona</a></li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mdl-mini-footer__right-section"
+          style="transform: translateY(20px)"
+        >
+          <ul class="mdl-mini-footer__link-list" style="margin-right: 15px">
+            <li><a href="#">Privacidade</a></li>
+            <li><a href="#">Termos</a></li>
+            <li><a style="cursor: pointer">Configurações</a></li>
+          </ul>
+        </div>
+      </footer>
     </div>
     <script src="./js/index.js"></script>
-</body>
-
+  </body>
 </html>
