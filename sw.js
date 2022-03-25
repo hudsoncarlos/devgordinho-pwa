@@ -82,11 +82,7 @@ self.addEventListener('activate', event => {
 self.addEventListener("fetch", async (e) => {
   const req = e.request;
   const url = new URL(req.url);
-
-  console.log('url -' + url.login + ' - ')
-  console.log('origin -' + location.origin)
-
-  if (url.login === location.origin) {
+  if (url.origin === location.origin) {
     e.respondWith(cacheFirst(req));
   } else {
     e.respondWith(networkAndCache(req));
@@ -94,8 +90,6 @@ self.addEventListener("fetch", async (e) => {
 });
 
 async function cacheFirst(req) {
-  console.log('cacheFirst - ' + req)
-
   const cache = await caches.open(cacheName);
   const cached = await cache.match(req);
   return cached || fetch(req);

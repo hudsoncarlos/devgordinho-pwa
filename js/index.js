@@ -7,8 +7,7 @@ window.addEventListener("load", () => {
 async function registerSW() {
   if ("serviceWorker" in navigator) {
     await navigator.serviceWorker
-      .register("sw.js")
-      .then(function (reg) {
+      .register("/sw.js", { scope: "/" }).then(function (reg) {
         console.log(
           "[PWA Builder] - Service worker foi registrado para escopo: " +
             reg.scope
@@ -20,5 +19,9 @@ async function registerSW() {
             error
         );
       });
+
+      navigator.serviceWorker.ready.then(function(registration) {
+        console.log('Service Worker Pronto!');
+     });
   }
 }
